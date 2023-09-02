@@ -1,12 +1,12 @@
-type heroi = {
-    vulgo: string;
-    name: string;
-}
-console.log("Olá mundo!")
+let b:boolean = false;
+let s:string = "Gabriel";
+let n:number = 30;
+let a:number = 1.7;
 
-function printaObjeto(pessoa: heroi){
-    console.log(pessoa);
-    
-}
+let nulo: null = null;
+let indef: undefined = undefined;
 
-printaObjeto({name: 'Bruce Wayne', vulgo: 'Batman'})
+let q:any = 3
+q = "oi"
+
+let v:void
