@@ -49,3 +49,17 @@ function addNumber(x:number , y:number):number{
 }
 
 console.log(addNumber(1,2));
+
+function callToPhone(phone: number | string){
+    return phone
+}
+
+console.log(callToPhone("123"));
+console.log(callToPhone(123));
+
+
+async function esperar(id:number): Promise<string> {
+    return "Felipe"
+}
+esperar(2).then((data) => {console.log(data);})
+
