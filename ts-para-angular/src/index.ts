@@ -10,3 +10,18 @@ let q:any = 3
 q = "oi"
 
 let v:void
+
+let o:object = {
+    tipo: "Object"
+}
+
+
+type MeuObjetto = {
+    nome: string;
+    id: number;
+}
+
+let mo:MeuObjetto = {
+    nome:"mo",
+    id: 3,
+}
