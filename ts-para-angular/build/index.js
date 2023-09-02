@@ -84,3 +84,8 @@ class Character {
 }
 let c = new Character("OPA", 31);
 c.attack();
+function concatArray(...itens) {
+    return new Array().concat(...itens);
+}
+const numArray = concatArray([1], [2, 4]);
+console.log(numArray);
