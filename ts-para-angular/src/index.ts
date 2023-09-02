@@ -38,3 +38,5 @@ dados2.shift()
 dados2.pop()
 console.log(dados2);
 
+let infos: (string | number)[] = [1, 'um']
+let tuplas: [string, number, boolean] = ["agua", 1, false]
