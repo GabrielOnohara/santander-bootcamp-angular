@@ -70,3 +70,17 @@ class Robo {
 }
 let myBot = new Robo(1, 'first');
 console.table(myBot);
+class Character {
+    constructor(name, strength, skill) {
+        this.name = name;
+        this.strength = strength;
+    }
+    getName() {
+        return this.name;
+    }
+    attack() {
+        console.table(this);
+    }
+}
+let c = new Character("OPA", 31);
+c.attack();

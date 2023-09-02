@@ -97,3 +97,26 @@ class Robo implements robot {
 
 let myBot:Robo = new Robo(1, 'first')
 console.table(myBot);
+
+//classes 
+class Character {
+    private name: string;
+    strength: number;
+    skill?: number;
+
+    constructor(name: string, strength: number, skill?: number){
+        this.name = name;
+        this.strength = strength;
+    }
+    
+    getName():string {
+        return this.name
+    }
+
+    attack():void {
+        console.table(this);
+    }
+}
+
+let c = new Character("OPA",31)
+c.attack()
