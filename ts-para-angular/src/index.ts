@@ -129,3 +129,50 @@ const  numArray = concatArray<number[]>([1], [2, 4])
 console.log(numArray);
 
 //saida [1, 2, 4]
+
+//decorators
+function ExibirNome(target:any){
+    console.log(target);
+}
+
+@ExibirNome
+class Funcionario {
+
+}
+
+function apiVersion(version :string){
+    return (target:any) =>{
+        Object.assign(target.prototype), {__version: version}
+    }
+}
+function miniLength(length: number): (target: Api, propertyKey: "name") => void {
+    return (target:any, key:string) => {
+        let __value = target[key]
+        const getter = () => __value;
+        const setter = (value:string) => {
+            if(value.length < length ){
+                throw new Error(`Tamanho mínimo menor do que ${length}`)
+            }else{
+                __value = value
+            }
+        }
+
+        Object.defineProperty(target, key, {
+            get:  getter,
+            set: setter,
+        })
+    }
+}
+
+
+@apiVersion("1.0")
+class Api{
+    @miniLength(3)
+    name:string;
+
+    constructor(name: string){
+        this.name = name
+    }
+}
+const api = new Api("ab");
+console.log(api.name);
