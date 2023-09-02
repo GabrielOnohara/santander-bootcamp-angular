@@ -120,3 +120,12 @@ class Character {
 
 let c = new Character("OPA",31)
 c.attack()
+
+function concatArray<T>(...itens: T[]): T[]{
+    return new Array().concat(...itens)
+}
+
+const  numArray = concatArray<number[]>([1], [2, 4])
+console.log(numArray);
+
+//saida [1, 2, 4]
