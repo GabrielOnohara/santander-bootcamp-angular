@@ -40,3 +40,12 @@ console.log(dados2);
 
 let infos: (string | number)[] = [1, 'um']
 let tuplas: [string, number, boolean] = ["agua", 1, false]
+
+let d:Date = new Date();
+console.log(d);
+
+function addNumber(x:number , y:number):number{
+    return x + y
+}
+
+console.log(addNumber(1,2));

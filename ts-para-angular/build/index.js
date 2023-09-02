@@ -24,3 +24,11 @@ dados2.push(6);
 dados2.shift();
 dados2.pop();
 console.log(dados2);
+let infos = [1, 'um'];
+let tuplas = ["agua", 1, false];
+let d = new Date();
+console.log(d);
+function addNumber(x, y) {
+    return x + y;
+}
+console.log(addNumber(1, 2));
