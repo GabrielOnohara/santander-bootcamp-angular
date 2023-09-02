@@ -62,3 +62,11 @@ const bot2 = {
 };
 console.table(bot);
 console.table(bot2);
+class Robo {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+let myBot = new Robo(1, 'first');
+console.table(myBot);
