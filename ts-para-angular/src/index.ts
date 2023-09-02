@@ -63,3 +63,24 @@ async function esperar(id:number): Promise<string> {
 }
 esperar(2).then((data) => {console.log(data);})
 
+
+type robot = {
+    id: number;
+    name: string;
+}
+
+const bot:robot = {
+    id: 1,
+    name: "rob"
+}
+
+interface robot2 {
+    id:number;
+    name:string;
+}
+const bot2:robot2 = {
+    id: 1,
+    name: "rob"
+}
+console.table(bot)
+console.table(bot2)

@@ -51,5 +51,14 @@ function esperar(id) {
         return "Felipe";
     });
 }
-let p = "";
 esperar(2).then((data) => { console.log(data); });
+const bot = {
+    id: 1,
+    name: "rob"
+};
+const bot2 = {
+    id: 1,
+    name: "rob"
+};
+console.table(bot);
+console.table(bot2);
