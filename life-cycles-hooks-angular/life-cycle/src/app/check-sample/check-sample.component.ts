@@ -1,15 +1,16 @@
-import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewChecked, AfterViewInit } from '@angular/core';
+import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewChecked, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-check-sample',
   templateUrl: './check-sample.component.html',
   styleUrls: ['./check-sample.component.css']
 })
-export class CheckSampleComponent implements OnInit, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit {
+export class CheckSampleComponent implements OnInit, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy {
 
   quantidade:number = 0
 
   constructor() { }
+
   //checked -> content -> view
   incrementar(){
     this.quantidade += 1
@@ -51,4 +52,7 @@ export class CheckSampleComponent implements OnInit, DoCheck, AfterContentChecke
 
   }
 
+  ngOnDestroy(): void {
+    console.log("On Destroy")
+  }
  }
