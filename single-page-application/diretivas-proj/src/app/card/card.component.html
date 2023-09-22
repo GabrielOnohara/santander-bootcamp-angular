@@ -1,6 +1,18 @@
 <h3>Produtos</h3>
 <ul>
-  <li *ngFor="let item of produtos">
-    {{item}}
+  <li *ngFor="let item of produtos; let i = index">
+    {{i}}{{item}}
   </li>
 </ul>
+
+<div [ngSwitch]="userType">
+  <div *ngSwitchCase="'admin'">
+    <p>admin</p>
+  </div>
+  <div *ngSwitchCase="'common'">
+    <p>common</p>
+  </div>
+  <div *ngSwitchDefault>
+    <p>default</p>
+  </div>
+</div>
