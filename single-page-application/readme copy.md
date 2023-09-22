@@ -25,3 +25,5 @@ ngContent
 aceita usar param select
 tag aceita documentos interno
 * seleciona todo o conteudo
+
+ng g m lista
