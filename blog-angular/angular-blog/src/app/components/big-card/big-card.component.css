@@ -1,7 +1,5 @@
 .big__card__container {
-  border: solid white 2px;
-  width: 400px;
-  height: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
